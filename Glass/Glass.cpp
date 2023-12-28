@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <cmath>
 #include <string.h>
-#include <vector>
+#include <ctime>
+#include <fstream>
 
 using namespace std;
 
@@ -118,6 +119,10 @@ public:
 
 int main()
 {
+    int timer = 1;
+    ofstream F;
+    (F.open("input.txt", ios::out));
+
     while (true) {
         Error::Stock  request;
         Error flag;
@@ -207,6 +212,11 @@ int main()
             }
             break;
         }
+        
+
+        std::cout << "runtime in " << timer << " time: " << clock() / 1000;
+         F <<"runtime in "<<timer<<" time:  " << clock() / 1000 <<"s" << endl;
+         timer++;     
     }
     return 0;
 }
