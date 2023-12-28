@@ -21,7 +21,7 @@ public:
 
         int add(int price[], int size, string type[], int Stype[], int number[]) {
             for (int i = 1; i <= size; i++) {
-                cout << "Request #" << number[i] << " Price: " << price[i] << " Type: " << type[i] << Stype[i] << endl;
+                cout << "Request #" << number[i] << " Price: " << price[i] << " Type: " << type[i] << endl;
             }
              return 0;
         }
@@ -214,7 +214,7 @@ int main()
         }
         
 
-        std::cout << "runtime in " << timer << " time: " << clock() / 1000;
+         cout << "\nruntime in " << timer << " time: " << clock() / 1000;
          F <<"runtime in "<<timer<<" time:  " << clock() / 1000 <<"s" << endl;
          timer++;     
     }
